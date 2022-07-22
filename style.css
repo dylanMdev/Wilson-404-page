@@ -1,0 +1,77 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: black;
+  color: green;
+}
+
+section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 2em);
+  max-width: 500px;
+}
+
+article {
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: left;
+}
+
+.btn {
+  bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  height: 2.8em;
+  padding: 0.25em;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    font-size: 1.5em;
+  }
+  article h1 {
+    font-size: 1.65em;
+  }
+  article p {
+    font-size: 1.35em;
+  }
+}
+/* ~1k devices */
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .btn {
+    font-size: 1.725em;
+  }
+  article h1 {
+    font-size: 1.875em;
+  }
+  article p {
+    font-size: 1.65em;
+  }
+}
+/* > 1k+ device */
+@media only screen and (min-width: 1921px) {
+  .btn {
+    font-size: 1.95em;
+  }
+  article h1 {
+    font-size: 2.25em;
+  }
+  article p {
+    font-size: 1.875em;
+  }
+}
